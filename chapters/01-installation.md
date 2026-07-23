@@ -69,7 +69,7 @@ uv 0.7.0
 Also check that uv can find Python:
 
 ```bash
-uv python lint
+uv python list
 ```
 
 This should list your available Python interpreters (or tell you none are found — which is fine, we'll install one in Chapter 5).
@@ -85,10 +85,10 @@ This should list your available Python interpreters (or tell you none are found 
 
 ### Verify
 
-- [ ] `uv --version` prints a version ≥ 0.5.0
-- [ ] `uv help` lists at least 15 commands
-- [ ] You can describe uv in one sentence: what is it and what does it replace?
+- [] `uv --version` prints a version ≥ 0.5.0
+- [] `uv help` lists at least 15 commands
+- [] You can describe uv in one sentence: what is it and what does it replace?
 
 > **One-sentence answer:** "uv is a fast Python package manager that replaces pip, poetry, pyenv, and pipx with a single tool."
 
-If you got these checks, move on to Chapter 2.
+If you got these checks, move on to [Chapter 2](/chapters/02-first-project.md).
