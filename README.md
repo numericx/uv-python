@@ -4,7 +4,8 @@
 
 This course teaches you **uv** (pronounced "you-vee"), an extremely fast Python package and project manager written in Rust by [Astral](https://astral.sh). It replaces `pip`, `pip-tools`, `pipx`, `poetry`, `pyenv`, `virtualenv`, and more — all with a single CLI tool that's typically **10–100× faster**.
 
-**Why uv matters for Python development**
+**Why uv matters for Python development?**
+
 Python development shouldn't be slowed down by your tools. With uv, you're not just managing packages—you're reclaiming your time. Where other tools take minutes to install dependencies, uv does it in seconds. No more juggling between pip, poetry, virtualenv, and pyenv—uv handles it all with a single, lightning-fast CLI. Whether you're building web apps, data science projects, or scripts, uv keeps your workflow smooth, your environments consistent, and your development speed unstoppable.
 
 No prior experience with package management is required. You'll build real projects from day one.
