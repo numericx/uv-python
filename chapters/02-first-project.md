@@ -147,4 +147,4 @@ uv init my-project -d "A CLI tool that does something useful"
 - [ ] `.python-version` stores the pinned Python version
 - [ ] No `.venv/` directory exists yet (it appears only when you add dependencies)
 
-If all checks pass, move on to Chapter 3.
+If all checks pass, move on to [Chapter 3](/chapters/03-dependencies.md).
