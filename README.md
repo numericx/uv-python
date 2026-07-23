@@ -86,20 +86,20 @@ Each chapter follows the same pattern:
 ```
 uv-python/
   LICENSE
-  README.md                  # You are here
+  README.md                     # You are here
   chapters/
-    01-installation.md       # What is uv + install
-    02-first-project.md      # uv init + pyproject.toml anatomy
-    03-dependencies.md       # uv add, sync, lock
-    04-running-code.md       # uv run in practice
-    05-python-versions.md    # uv python pin + install
-    06-tools-and-uvx.md      # uv tool install, uvx
-    07-script-mode.md        # uv run --script
-    08-caching-performance.md # uv cache, why it's fast
-    09-update-remove.md      # uv remove, upgrade, --frozen
-    10-capstone.md           # Full end-to-end exercise
+    01-installation.md          # What is uv + install
+    02-first-project.md         # uv init + pyproject.toml anatomy
+    03-dependencies.md          # uv add, sync, lock
+    04-running-code.md          # uv run in practice
+    05-python-versions.md       # uv python pin + install
+    06-tools-and-uvx.md         # uv tool install, uvx
+    07-script-mode.md           # uv run --script
+    08-caching-performance.md   # uv cache, why it's fast
+    09-update-remove.md         # uv remove, upgrade, --frozen
+    10-capstone.md              # Full end-to-end exercise
   exercises/
-    README.md                # Capstone project requirements
+    README.md                   # Capstone project requirements
 ```
 
 ---
