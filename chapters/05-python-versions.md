@@ -63,8 +63,8 @@ These are regular directories — you can `ls` them to see what uv manages. Neve
 Instead of pinning, pass `--python` (or `-p`) directly:
 
 ```bash
-uv init my-project --python 3.13    # Create a project targeting 3.13
-uv add requests -p 3.12             # Add deps using 3.12 for this operation
+uv init my-project --python 3.13        # Create a project targeting 3.13
+uv add requests -p 3.12                 # Add deps using 3.12 for this operation
 uv run python script.py --python 3.11   # Run with 3.11 just this once
 ```
 
