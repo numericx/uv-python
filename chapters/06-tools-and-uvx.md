@@ -37,7 +37,7 @@ ruff --version    # Works globally, outside any project
 ## Updating and removing tools
 
 ```bash
-uv tool upgrade ruff        # Upgrade a single tool to latest allowed version
+uv tool upgrade ruff         # Upgrade a single tool to latest allowed version
 uv tool upgrade --all        # Upgrade all installed tools
 uv tool uninstall ruff       # Remove the tool completely
 ```
@@ -61,7 +61,7 @@ black 24.8.0
 Sometimes you need a tool once (or want to test it) without committing to an installation. `uvx` is `uv tool run` — it creates a temporary environment, installs the tool, runs it, and deletes everything:
 
 ```bash
-uvx ruff check .              # Run ruff in a temporary env (no install needed)
+uvx ruff check .               # Run ruff in a temporary env (no install needed)
 uvx black main.py              # Format a file with black, no install
 uvx mypy src/ -p 3.12          # Use a specific Python version for the tool
 ```

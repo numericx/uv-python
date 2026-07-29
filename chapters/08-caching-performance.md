@@ -15,7 +15,7 @@ It comes down to three things:
 uv stores its cache at:
 
 ```
-~/.cache/uv/           # Linux / macOS (XDG_CACHE_HOME/uv)
+~/.cache/uv/               # Linux / macOS (XDG_CACHE_HOME/uv)
 %LOCALAPPDATA%\uv\cache\   # Windows
 ```
 
@@ -23,8 +23,8 @@ Inside, you'll find:
 
 ```
 ~/.cache/uv/
-├── archives/          # Downloaded wheels
-├── build-suffixes/    # Compiled package builds (rarely needed)
+├── archives/            # Downloaded wheels
+├── build-suffixes/      # Compiled package builds (rarely needed)
 └── python-install-dir/  # Managed CPython downloads
 ```
 
@@ -48,9 +48,9 @@ You rarely need to prune. uv's cache grows slowly because it deduplicates identi
 - Running in CI with `uv cache prune --ci` between jobs
 
 ```bash
-du -sh ~/.cache/uv   # Check your cache size before pruning
+du -sh ~/.cache/uv     # Check your cache size before pruning
 uv cache prune         # Remove unused entries
-du -sh ~/.cache/uv   # Cache should be smaller now
+du -sh ~/.cache/uv     # Cache should be smaller now
 ```
 
 ## Performance tips for your workflow
@@ -118,7 +118,7 @@ Compare the speed of this install with the one in Chapter 3. The difference is t
 ### Step 3: Prune and verify
 
 ```bash
-du -sh ~/.cache/uv           # Note the size
+du -sh ~/.cache/uv            # Note the size
 uv cache prune                # Remove unused entries
 du -sh ~/.cache/uv            # Size should be smaller
 ```
@@ -129,9 +129,9 @@ du -sh ~/.cache/uv            # Size should be smaller
 cd hello-uv
 # Make pyproject.toml "dirty" (add a comment)
 echo "# dev note" >> pyproject.toml
-uv sync --frozen   # Should fail with error about uv.lock being out of date
+uv sync --frozen    # Should fail with error about uv.lock being out of date
 uv lock             # Fix: regenerate lock file
-uv sync --frozen   # Now it works
+uv sync --frozen    # Now it works
 ```
 
 ---

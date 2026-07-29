@@ -160,7 +160,7 @@ uv run --script hello_uv/fetch_weather.py   # Should pick up httpx automatically
 
 - [ ] A script with inline `[/// script]` blocks runs without any project setup
 - [ ] `#!/usr/bin/env -S uv run --script` shebang makes a script directly executable
-- -Dependencies declared in the script are installed automatically
+- [ ] Dependencies declared in the script are installed automatically
 - [ ] You can add dev dependencies to scripts the same way as runtime deps
 
 If all checks pass, move on to Chapter 8.
