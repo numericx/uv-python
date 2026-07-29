@@ -5,8 +5,8 @@
 Before uv, the workflow was:
 
 ```bash
-source .venv/bin/activate   # Activate manually
-python main.py              # Run code
+source .venv/bin/activate    # Activate manually
+python main.py               # Run code
 deactivate                   # Remember to deactivate later
 ```
 
@@ -31,7 +31,7 @@ No activation, no deactivation, no forgetting to activate.
 Since uv installs packages into `.venv`, you can run them directly:
 
 ```bash
-uv run ruff check .          # Lint the project
+uv run ruff check .           # Lint the project
 uv run pytest tests/          # Run tests
 uv run python -m http.server  # Start a server (any CLI tool works)
 ```
@@ -112,9 +112,9 @@ Notice you never activated a virtual environment.
 ### Step 4: Try with `--frozen`
 
 ```bash
-uv run --frozen python hello_uv/cli.py   # Should work (already synced)
+uv run --frozen python hello_uv/cli.py    # Should work (already synced)
 uv add httpx                              # Now pyproject.toml is "dirty"
-uv run --frozen python hello_uv/cli.py   # Fails — lock file out of date!
+uv run --frozen python hello_uv/cli.py    # Fails — lock file out of date!
 uv sync                                   # Fix: sync the environment
 ```
 
